@@ -1,0 +1,276 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.containerHeader {
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content:space-between;
+}
+
+.containerHeader ul {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.containerHeader ul li{
+    list-style: none;
+    margin-left: 16px;
+    padding: 8px;
+    align-items: center;
+    padding-bottom: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.containerSobreLoja {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0  auto;
+    margin-top: 24px;
+    display:flex;
+}
+
+.containerSobreLoja img {
+    height: 400px;
+    width: 400px;
+    margin-right: 40px;
+}
+
+.containerSobreLoja div {
+    display: block;
+    max-width: 400px;
+}
+
+.containerSobreLoja h2 {
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid black;
+}
+
+.containerSobreLoja p {
+    font-size: 18px;
+}
+
+.containerProdutos {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#produtos {
+    margin-top: 60px;
+    margin-bottom: 34px;
+    border-bottom: 2px solid black;
+}
+
+.listaProdutos {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    justify-content: space-between;
+}
+
+.listaProdutos ul{
+    max-width: 250px;
+}
+
+.containerProdutos img {
+    width: 200px;
+    height: 150px;
+}
+
+.listaProdutos li {
+    list-style: none;
+    margin: 6px auto
+
+}
+
+.listaProdutos ul p {
+    color: rgb(79, 79, 79);
+}
+
+.listaProdutos ul button {
+    width: 100%;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    height: 30px;
+    background-color: rgb(247, 190, 77);
+    border-radius: 6%;
+}
+
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+
+    header {
+        max-width: 900px;
+        padding: 10px 25px;
+
+    }
+
+    .containerHeader ul li{
+        padding: 3px;
+    }
+
+    .containerSobreLoja {
+        max-width: 900px;
+        width: 100%;
+        display: block;
+        justify-items: center;
+    }
+
+    .containerSobreLoja img {
+        width: 600px;
+        height: 600px;
+        display: flex;
+        margin-right: 0;
+        margin-top: 10px;
+        justify-content: space-between;
+    }
+    
+    .containerSobreLoja div {
+        display: block;
+        max-width: 600px;
+        margin-top: 24px;
+    }
+
+    h2 {
+        font-size: 32;
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+
+    .containerProdutos {
+        max-width: 600px;
+        width: 100%;
+        display: flexbox;
+
+    }
+
+    .listaProdutos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-items: center;
+        justify-content: space-between;
+    }
+
+    .listaProdutos img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .listaProdutos ul {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 641px) {
+    
+
+    .containerHeader {
+        width: 400px;
+        height: 100px;
+        display: flex;
+        padding: 0 auto;
+        margin: 0%;
+        align-content: center;
+    }
+
+    .containerHeader h1 {
+        align-self: center;
+        margin-left: 30px;
+        width: 150PX;
+    }
+
+    .containerHeader ul {
+        display:block;
+        align-self: center;
+    }
+
+    .containerHeader ul li {
+        padding: 2px 2px;
+        margin-right: 45px 
+    }
+
+    .containerSobreLoja {
+        max-width: 400px;
+        width: 100%;
+        display: block;
+        justify-items: center;
+    }
+
+    .containerSobreLoja img {
+        width: 300px;
+        height: 300px;
+        display: flex;
+        margin-right: 0;
+        margin-top: 10px;
+        margin-bottom: 40px;
+        justify-content: space-between;
+    }
+    
+    .containerSobreLoja div {
+        display: block;
+        max-width: 300px;
+        margin-top: 24px;
+    }
+
+    .containerSobreLoja div p {
+        margin-top: 30px;
+    }
+
+    h2 {
+        width: 300px;
+        font-size: 32;
+        margin-bottom: 40px;
+        margin-top: 40px;
+        padding-bottom: 25px; 
+        justify-content: center ;
+    }
+
+    .containerProdutos {
+        max-width: 400px;
+        width: 300px;
+        display: block;
+        padding: 0 auto;
+        justify-items: center;
+    }
+
+    .listaProdutos ul li img {
+        width: 300px;
+        height: 300px;
+        display: flex;
+        margin-right: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        justify-content: space-between;
+    }
+
+    .listaProdutos {
+        display: block;
+        justify-content: space-between;
+    }
+
+    .listaProdutos ul {
+        margin-bottom: 5px;
+        width: 300px;
+        align-items: center;
+        padding-inline-end: 0;
+    }
+}
